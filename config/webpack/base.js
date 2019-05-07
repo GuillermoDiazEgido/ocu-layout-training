@@ -86,6 +86,9 @@ module.exports = {
       hash: true,
     }),
     new CheckerPlugin(),
-    new Dotenv(),
+    new Dotenv({
+      safe: true,
+      systemvars: true,
+    }),
   ],
 };
