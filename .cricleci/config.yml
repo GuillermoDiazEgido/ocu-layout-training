@@ -1,0 +1,11 @@
+version: 2
+jobs:
+  build:
+    working_directory: ~/ocu-layout-training
+    docker:
+      - image: circleci/node:10
+    steps:
+      - checkout
+      - run:
+          name: install
+          command: 'npm install'
